@@ -5,6 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    function firstDegreeEquation () {
+        let a = prompt("Nhập giá trị a:")
+        let b = prompt("Nhập giá trị b:")
+        let x
+        if (isNaN(a) || isNaN(b)){
+            alert("Hãy nhập vào số!")
+        }
+        else if (a === 0){
+            alert("Phương trình vô nghiệm!")
+        }
+        else if (b === 0) {
+            alert("Phương trình có vô số nghiệm!")
+        }
+        else {
+            x = -b / a
+            console.log(x)
+            alert("Kết quả x là: " + x)
+        }
+    }
+    alert(firstDegreeEquation(5, 8))
+</script>
 </body>
 </html>
